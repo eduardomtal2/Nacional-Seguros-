@@ -229,20 +229,23 @@ section{
 }
 .large-cards .card{
   padding:45px;
-  height:470px;
+  min-height:470px;
 }
 .card a h3{
   text-decoration: none;
 }
+
 .card{
-  
   position: relative;
   overflow: hidden;
   padding:35px;
   border-radius:24px;
   box-shadow:0 5px 20px rgba(0,0,0,.05);
   transition:.3s;
-  justify-content: flex-start;
+
+  display:flex;
+  flex-direction:column;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -259,28 +262,28 @@ section{
   z-index: 1;
 }
 .card-auto{
-  background-image: url("images/seguro_auto.png");
+  background-image: url("../images/seguro_auto.png");
 }
 .card-residencial{
-  background-image: url("images/Seguro_residencial.png");
+  background-image: url("../images/Seguro_residencial.png");
 }
 .card-empresarial{
-  background-image: url("images/Seguro_empresarial.png");
+  background-image: url("../images/Seguro_empresarial.png");
 }
 .card-seguro-vida{
-  background-image: url("images/Seguro_vida.png");
+  background-image: url("../images/Seguro_vida.png");
 }
 .card-saude{
-  background-image: url("images/seguro_saude.png");
+  background-image: url("../images/seguro_saude.png");
 }
 .card-evento{
-  background-image: url("images/seguro_eventos.png");
+  background-image: url("../images/seguro_eventos.png");
 }
 .card-c-auto{
-  background-image: url("images/consorcio_auto.png");
+  background-image: url("../images/consorcio_auto.png");
 }
 .card-imovel{
-  background-image: url("images/consorcio_imovel.jpeg");
+  background-image: url("../images/consorcio_imovel.jpeg");
 }
 .card:hover{
   transform:translateY(-8px);
@@ -288,28 +291,71 @@ section{
 }
 
 .card-icon{
-  width:70px;
-  height:70px;
+  width:90px;
+  height:90px;
   background:#dbeafe;
   border-radius:18px;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:2rem;
   margin-bottom:25px;
   color:#1d4ed8;
 }
 
+.card-icon i{
+  font-size:3rem;
+}
+
 
 .card h3{
-  color: white;
-  margin-bottom:15px;
-  font-size:1.6rem;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color:#ffffff;
 }
 
 .card p{
+  font-size: 1rem;
+  line-height: 1.5;
+  flex-grow: 1;
   color:#ffffff;
-  font-size:1.05rem;
+}
+
+.card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    margin-top: 20px;
+    padding: 12px;
+
+    background: #25D366;
+    color: #fff !important;
+
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-whatsapp i {
+    color: #fff !important;
+}
+
+.btn-whatsapp:hover {
+    background: #1ea952;
+    color: #fff !important;
 }
 
 .partners-carousel{
