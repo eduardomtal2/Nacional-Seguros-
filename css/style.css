@@ -262,13 +262,13 @@ section{
   z-index: 1;
 }
 .card-auto{
-  background-image: url("../images/seguro_auto.png");
+  background-image: url("../images/Seguro_auto.png");
 }
 .card-residencial{
   background-image: url("../images/Seguro_residencial.png");
 }
 .card-empresarial{
-  background-image: url("../images/Seguro_empresarial.png");
+  background-image: url("../images/seguro_empresarial.png");
 }
 .card-seguro-vida{
   background-image: url("../images/Seguro_vida.png");
