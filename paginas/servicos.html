@@ -324,9 +324,18 @@
 <script>
 const toggle = document.getElementById('navToggle');
 const navUl = document.querySelector('nav ul');
+
 toggle.addEventListener('click', () => {
   toggle.classList.toggle('open');
   navUl.classList.toggle('open');
+});
+
+// Fecha ao clicar em qualquer link
+navUl.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    toggle.classList.remove('open');
+    navUl.classList.remove('open');
+  });
 });
 </script>
 </body>
